@@ -1,0 +1,10 @@
+{
+  "appId": "com.ironpace.app",
+  "appName": "Ironpace",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false
+    }
+  }
+}
