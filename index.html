@@ -4,40 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
   <title> Fitness </title>
+  <link rel="stylesheet" href="index.css">
   
 
-<style>
-  .camera-panel {
-    position: relative; /* makes it the anchor for anything inside it that uses absolute positioning */
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background: #000;
-  }
-
-  #videoElement {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: scaleX(-1); /* mirror to match video*/
-    display: none; 
-  }
-
-  #outputCanvas {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: scaleX(-1); /* mirror to match video*/
-    z-index: 1; /*sits on top*/
-  }
-
-
-</style>
 
 </head>
 <body>
+
+
   <div class="camera-panel">
 
     <!-- Recieves the webcam stream-->
@@ -60,7 +34,6 @@
    crossorigin="anonymous"></script>
 
 <!-- crossorigin="anonymous, needs it, without it some browsers block scripts loaded from a different domain, security check (like I know this is from another server and I accept that)"-->
-<button id="takePhoto">Take Photo</button>
 <img id="photo" style="max-width: 100%;" />
 
 <script type="module">
@@ -172,6 +145,7 @@
   const hipAngle = calcAngle(lm[11], lm[23], lm[25]);
 
   console.log('Knee angle:', Math.round(kneeAvg)); 
+  document.getElementById('kneeDisplay').textContent = Math.round(kneeAvg);
 
   
   
@@ -262,7 +236,13 @@
 
  
 
+
+
   </script>
+
+  <h1>The value for number is: <span id="kneeDisplay">0</span></h1>
+
+    
 
 </body>
 
