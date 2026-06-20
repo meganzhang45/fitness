@@ -27,3 +27,11 @@
     transform: scaleX(-1); /* mirror to match video*/
     z-index: 1; /*sits on top*/
   }
+
+  .knee-display {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
