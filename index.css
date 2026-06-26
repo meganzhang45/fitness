@@ -1,3 +1,66 @@
+  body {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FFF8DC;
+  }
+
+  .title {
+  float: left;
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #3F334D;
+  display: flex;
+  font-size: 50px;
+}
+
+  .topnav{
+    overflow: hidden;
+    background-color: #FFF8DC;
+  }
+
+  .topnav a{
+    float: left;
+    display: block;
+    color: purple;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20;
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+
+  .topnav a:hover{
+    background-color: #ddd;
+    color: black;
+    font-weight: 700;
+  }
+
+  .topnav a.active{
+    background-color: #C0C5C1;
+    color: purple;
+  }
+
+  .topnav img{
+    float: right;
+    width: 20px;
+    height: 20px;
+  } 
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: 8px;
+    font-size: 20;
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+
+ 
+
+  
+  
   .camera-panel {
     position: relative; /* makes it the anchor for anything inside it that uses absolute positioning */
     width: 100%;
@@ -8,6 +71,7 @@
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
+    border-radius: 20px;
   }
 
   #videoElement {
