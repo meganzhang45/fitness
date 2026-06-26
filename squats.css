@@ -1,8 +1,17 @@
+:root {
+    --yellow-colour: #eaf0ce;
+    --light: #C0C5C1;
+    --med: #7D8491;
+    --dark: #574B60;
+    --darkest: #3F334D; 
+}
+ 
+  
   body {
     font-family: "Kulim Park", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: #FFF8DC;
+    background-color: var(--yellow-colour);
   }
 
   .title {
@@ -15,17 +24,29 @@
   font-size: 50px;
 }
 
+.back-button {
+   float: left;
+    display: block;
+    color: var(--darkest);
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 20;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
   .topnav{
     overflow: hidden;
-    background-color: #FFF8DC;
+    background-color: var(--yellow-colour);
   }
 
   .topnav a{
     float: left;
     display: block;
-    color: purple;
+    color: var(--dark);
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 14px;
     text-decoration: none;
     font-size: 20;
     border: 2px solid black;
@@ -36,11 +57,6 @@
     background-color: #ddd;
     color: black;
     font-weight: 700;
-  }
-
-  .topnav a.active{
-    background-color: #C0C5C1;
-    color: purple;
   }
 
   .topnav img{
